@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: white;
+    height: 100vh;
+    font-family: "Poppins", sans-serif; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background: rgb(43, 43, 43);
+    width: 100%;
+}
+
+.nav-hello span {
+    margin-left: 10px;
+    font-size: 30px;    
+    color: white;
+}
+
+.logged {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* center alignment for smaller screens */
+    flex-direction: column;
+    margin: 100px auto;
+}
+
+.logged h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
+    color: rgb(22, 22, 22);
+    text-align: center;
+
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    max-width: 100%; /* make image responsive */
+    height: auto; /* maintain aspect ratio */
+}
+
+.dropbtn {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dropdown-list {
+    text-align: center;
+    margin-left: 10px;
+    display: none;
+    position: absolute;
+    background-color: rgb(43, 43, 43);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    margin-top: 8px;
+    border-radius: 4px;
+}
+
+.dropdown-list p {
+    color: white;
+    padding: 15px px;
+    font-weight: normal;
+}
+
+.dropdown:hover .dropdown-list {
+    display: block;
+}
+
+.dropdown-list p:hover {
+    background-color: rgb(43, 43, 43);
+}
+
+@media (max-width: 600px) {
+    .logged h1 {
+        font-size: 50px; /* adjust font size for smaller screens */
+    }
+
+    .image img {
+        width: 80%; /* adjust image width */
+    }
+}
